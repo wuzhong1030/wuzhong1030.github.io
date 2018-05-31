@@ -3,8 +3,9 @@ title: webpack系列笔记(一)
 date: 2018-05-31 09:56:14
 tags: webpack, javascript
 ---
+四个核心概念
 
-### **四个核心模块**
+<!-- more -->
 **1. 入口（entry）**
 这个选项指的是webpack的入口文件，可以是单一的，也可以有多入口。
 
