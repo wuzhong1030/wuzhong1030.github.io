@@ -1,0 +1,18 @@
+.resume-container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header-bg {
+  width: 100%;
+  height: 243px;
+  text-align: center;
+  background: url(../image/bg@2x.png) no-repeat scroll center / 100% 100%;
+}
+
+.header-bg__title {
+  margin: 0 auto;
+  width: 356.8px;
+  height: 105.6px;
+  background: url(../image/job8@2x.png) no-repeat scroll center / 100% 100%;
+}
