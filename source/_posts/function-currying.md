@@ -1,5 +1,5 @@
 ---
-title: 函数柯里化在实际开发中的应用
+title: 函数柯里化的实际应用
 date: 2018-06-12 10:17:48
 tags: javascript, currying
 ---
