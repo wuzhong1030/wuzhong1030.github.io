@@ -1,15 +1,47 @@
-# 姓名
-## 职位
-> 联系方式
+# 联系方式
 
-### 关于我
-/* 列举一下个人优势和特点 */
+- 手机：17755561218
+- Email：wuzhong1030@gmail.com
+- 微信号：wz921030
 
-### 工作经历
-/* 工作的经历和工作内容,注意要时间倒序 */
 
-### 教育经历
-/* 学校和专业等信息 */
+# 个人信息
 
-### 技术经历
-/* 不要单纯列出一堆技术名词，而是明确自己做过的事情，这样面试官比较容易对我的技术有个初步判断 */
+ - 吴忠/男/1992 
+ - 本科/河海大学计算机系 
+ - 工作年限：4年
+ - 技术博客：http://stone26.com
+ - Github：https://github.com/wuzhong1030
+ - 期望职位：前端工程师
+ - 期望薪资：税前月薪15k~20k
+ - 期望城市：南京
+
+
+# 工作经历
+
+## 小黑鱼科技有限公司 （ 2017年12月 ~ 至今 ）
+
+### 全民游戏
+- 技术栈：vue+axios+mint-ui
+- 职责：独立负责该项目的前端开发
+- 地址：https://yule.hule888.com
+
+### 全民答题 
+- 技术栈：vue+axios+vue-router+socket+mint-ui
+- 职责：独立负责该项目的前端开发
+- 地址：https://yule.hule888.com
+
+### 小黑鱼旅行
+- 技术栈：vue+vuex+axios+vue-router
+- 职责：独立负责该项目的前端开发
+- 下载小黑鱼APP，在机票火车票中方可体验。
+
+# 技能清单
+
+以下均为我熟练使用的技能
+
+- Web开发：html5, javascript, css3
+- 前端框架：Bootstrap/AngularJS/EmberJS/HTML5/Cocos2dJS/Ionic/Bootstrap
+- 前端工具：Webpack/Gulp/SaSS/LeSS/Weex
+- 版本管理工具：Svn/Git
+- 开放平台：微信公众号/小程序
