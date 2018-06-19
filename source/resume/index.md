@@ -34,14 +34,14 @@
 ### 小黑鱼旅行
 - 技术栈：vue+vuex+axios+vue-router
 - 职责：独立负责该项目的前端开发
-- 下载小黑鱼APP，在机票火车票中方可体验。
+- 下载小黑鱼APP，在机票火车票中方体验
 
 # 技能清单
 
 以下均为我熟练使用的技能
 
 - Web开发：html5, javascript, css3
-- 前端框架：Bootstrap/AngularJS/EmberJS/HTML5/Cocos2dJS/Ionic/Bootstrap
+- 前端框架：Bootstrap/AngularJS/EmberJS/HTML5/Cocos2dJS/Ionic
 - 前端工具：Webpack/Gulp/SaSS/LeSS/Weex
 - 版本管理工具：Svn/Git
 - 开放平台：微信公众号/小程序
