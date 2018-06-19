@@ -29,7 +29,7 @@
 ### 全民答题 
 - 技术栈：vue+axios+vue-router+socket+mint-ui
 - 职责：独立负责该项目的前端开发
-- 地址：https://yule.hule888.com
+- 地址：https://qmdt.hule888.com
 
 ### 小黑鱼旅行
 - 技术栈：vue+vuex+axios+vue-router
@@ -39,7 +39,6 @@
 # 技能清单
 
 以下均为我熟练使用的技能
-
 - Web开发：html5, javascript, css3
 - 前端框架：Bootstrap/AngularJS/EmberJS/HTML5/Cocos2dJS/Ionic
 - 前端工具：Webpack/Gulp/SaSS/LeSS/Weex
