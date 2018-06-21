@@ -1,3 +1,4 @@
+<br/>  
 # 联系方式
 
 - 手机：17755561218
@@ -21,17 +22,17 @@
 
 ## 小黑鱼科技有限公司 （ 2017年12月 ~ 至今 ）
 
-### 全民游戏
+### 1. 全民游戏
 - 技术栈：vue+axios+mint-ui
 - 职责：独立负责该项目的前端开发
 - 地址：https://yule.hule888.com
 
-### 全民答题 
+### 2. 全民答题 
 - 技术栈：vue+axios+vue-router+socket+mint-ui
 - 职责：独立负责该项目的前端开发
 - 地址：https://qmdt.hule888.com
 
-### 小黑鱼旅行
+### 3. 小黑鱼旅行
 - 技术栈：vue+vuex+axios+vue-router
 - 职责：独立负责该项目的前端开发
 - 下载小黑鱼APP，在机票火车票中方体验
@@ -39,8 +40,8 @@
 # 技能清单
 
 以下均为我熟练使用的技能
-- Web开发：html5, javascript, css3
-- 前端框架：Bootstrap/AngularJS/EmberJS/HTML5/Cocos2dJS/Ionic
+- Web开发：HTML5, Javascript, CSS3
+- 前端框架：Bootstrap/AngularJS/EmberJS/Cocos2dJS/Ionic
 - 前端工具：Webpack/Gulp/SaSS/LeSS/Weex
 - 版本管理工具：Svn/Git
 - 开放平台：微信公众号/小程序

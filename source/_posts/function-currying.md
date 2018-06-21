@@ -21,7 +21,7 @@ var currying = function(fn) {
 这是函数柯里化的通用写法。
 ###应用场景
 
- 1. 延迟计算
+## 1. 延迟计算
 ```javascript
 var currying = function(fn) {
     var args = [];
@@ -41,7 +41,7 @@ var res = sum(5);
 res(); //15
 ```
 **这里利用了闭包的功能保存了函数的执行状态**
- 2. 动态创建函数
+## 2. 动态创建函数
  写一个兼容现代浏览器和IE浏览器的添加事件方法，通常会这样写：
 ```javascript
 const addEvent = function(ele, type, fn, capture) {
@@ -68,7 +68,7 @@ const addEvent = function() {
 }
 ```
 这里动态创建了一个新的函数，后面使用只需传入参数即可。
- 3. 参数复用
+## 3. 参数复用
  当多次调用一个函数的时候，并且传递的参数大都相同，这个时候就可以应用柯里化函数。
 例如：
 ```javascript
