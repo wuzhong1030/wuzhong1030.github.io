@@ -13,7 +13,6 @@
  - 技术博客：http://stone26.com
  - Github：https://github.com/wuzhong1030
  - 期望职位：前端工程师
- - 期望薪资：税前月薪15k~20k
  - 期望城市：南京
 
 
@@ -49,7 +48,7 @@
 ## 江苏叁拾叁信息技术有限公司 （ 2014年6月 ~ 2016年5月 ）
 
 ###  企业办公系统
-- 技术栈：angularJs+Bootstrap
+- 技术栈：angularJs+Bootstrap+ui-router
 - 职责：独立负责该项目的前端开发
 - 地址：http://58.213.133.133:8088
 
