@@ -1,5 +1,5 @@
 ---
-title: 使用 eslint+editorconfig+precommit规范代码
+title: 使用 eslint+editorconfig+precommit
 date: 2018-06-23 16:26:51
 tags: eslint
 ---
