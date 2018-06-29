@@ -3,6 +3,8 @@ title: vue和angular数据绑定原理对比
 date: 2018-06-28 21:50:14
 tags: vuejs, angular
 ---
+ 
+angular1.0 和 vue2.0
 
 <!-- more -->
 
