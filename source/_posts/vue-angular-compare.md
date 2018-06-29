@@ -1,8 +1,10 @@
 ---
-title: vue-angular-compare
+title: vue和angular数据绑定原理对比
 date: 2018-06-28 21:50:14
 tags: vuejs, angular
 ---
+
+<!-- more -->
 
 ## angular
 angularJs 实现的双向绑定是通过脏值检查，来比对数据是否有变更，并且只有在以下场景才会进入脏值检查：
