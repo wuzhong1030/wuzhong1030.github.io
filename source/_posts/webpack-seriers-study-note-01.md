@@ -29,8 +29,9 @@ entry: {
     page2: './src/page2.js'
   },
 }
-> 结合 htmlWebpackPlugin 这个插件生成多页面
 ```
+> 结合 htmlWebpackPlugin 这个插件生成多页面
+
  **2. 输出（output）**
 在所有的资源（assets）处理完成后，需要告诉webpack将资源打包输出在哪里，这个选项就可以指定输出文件的名称以及目录位置，这里注意即便存在多个入口，也只能有一个output。
 ```javascript
