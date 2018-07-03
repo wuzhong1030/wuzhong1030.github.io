@@ -20,7 +20,7 @@
     "hexo-server": "^0.2.2"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-webserver": "^0.9.1"
   }
 }
