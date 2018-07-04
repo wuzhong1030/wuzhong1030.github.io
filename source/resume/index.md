@@ -56,7 +56,7 @@
 
 以下均为我熟练使用的技能
 - Web开发：HTML5, Javascript, CSS3
-- 前端框架：Bootstrap/AngularJS/EmberJS/Cocos2dJS/Ionic
-- 前端工具：Webpack/Gulp/SaSS/LeSS/Weex
+- 前端框架：Bootstrap/Angular1.x/Cocos2dJS/Ionic/Vue2.x
+- 前端工具：Webpack/Gulp/Sass/LeSS/Weex
 - 版本管理工具：Svn/Git
 - 开放平台：微信公众号/小程序
