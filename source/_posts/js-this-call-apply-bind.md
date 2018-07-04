@@ -4,9 +4,10 @@ date: 2018-07-03 15:56:49
 tags: javascript
 ---
 
-### 先来看下this
 
 <!-- more -->
+
+### 先来看下this
 
 在 javascript 中，方法是怎么执行的
 

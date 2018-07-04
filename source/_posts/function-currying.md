@@ -11,9 +11,9 @@ tags: javascript, currying
 ```javascript
 var currying = function(fn) {
     var slice = Array.prototype.slice,
-        __args = slice(arguments, 1);
+        __args = slice.call(arguments, 1);
     return function() {
-        var __inargs = slice(arguments);
+        var __inargs = slice.call(arguments);
         return fn.apply(null, __args.concat(__inargs));
     }
 }
