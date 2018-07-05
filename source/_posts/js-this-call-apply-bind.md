@@ -4,6 +4,7 @@ date: 2018-07-03 15:56:49
 tags: javascript
 ---
 
+在JavaScript中经常用到的this, call, apply, bind
 
 <!-- more -->
 
