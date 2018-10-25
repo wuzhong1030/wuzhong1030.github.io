@@ -30,7 +30,7 @@
 - 地址：https://qmdt.hule888.com
 
 ### 3. 小黑鱼旅行
-- 技术栈：vue+vuex+axios+vue-router
+- 技术栈：vue+axios+vue-router
 - 职责：独立负责该项目的前端开发
 - 下载小黑鱼APP，在机票火车票中方体验
 
@@ -57,6 +57,6 @@
 以下均为我熟练使用的技能
 - Web开发：HTML5, Javascript, CSS3
 - 前端框架：Bootstrap/Angular1.x/Cocos2dJS/Ionic/Vue2.x
-- 前端工具：Webpack/Gulp/Sass/LeSS/Weex
+- 前端工具：Webpack
 - 版本管理工具：Svn/Git
 - 开放平台：微信公众号/小程序
