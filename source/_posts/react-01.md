@@ -1,10 +1,10 @@
 ---
-title: react_01
+title: react 学习笔记 (一)
 date: 2018-11-08 15:24:17
 tags: javascript, react
 ---
 
-### react 学习笔记 (一)
+### 初识 React
 
 <!-- more -->
 
