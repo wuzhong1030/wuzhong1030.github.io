@@ -22,3 +22,19 @@ React Fiber会把更新过程碎片化，每执行完一段更新过程，就把
 
 维护每一个分片的数据结构，就是Fiber。
 
+在React Fiber中，一次更新过程会被分成多个片段执行，这就完全有可能在一个更新过程没有完全结束就被优先级更高的任务打断，React会执行优先级更高的任务，等到执行完成，更新过程需要重头再来。
+
+React Fiber会把一个更新过程分成两个阶段
+* 协调阶段 Reconciliation Phase
+在这个阶段，React Fiber会找出需要更新哪些DOM，这个阶段是可以被打断的，在这个阶段会执行的生命周期：
+    * componentWillMount
+    * componentWillUpdate
+    * shouldComponentUpdate
+    * componentWillReceiveProps
+* 渲染阶段 Commit Phase
+这一阶段不会被打断，React会把DOM更新完成，在这一阶段执行的生命周期函数：
+    * componentDidMount
+    * componentDidUpdate
+    * componentWillUnmount
+
+因为第一阶段有可能会被打断导致更新重头执行，就这有可能导致了第一阶段的生命周期函数会在更新过程中反复执行多次
