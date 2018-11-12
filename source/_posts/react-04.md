@@ -104,3 +104,4 @@ const FadeInButton = styled.button`
     animation: 1s ${fadeIn} ease-out;
 `
  ```
+ keyframes 方法会生成一个唯一的 key 作为 keyframes 的名称，保证它的作用域是在单个文件内，非全局的。
