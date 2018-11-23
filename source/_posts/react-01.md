@@ -53,6 +53,7 @@ state，控制组件的表现，用来存放组件的交互状态
 * state的更新是异步的
 调用setState，组件的state并不会马上改变，React会把要修改的状态放进一个队列，在正确的时机来执行修改，并且React会出于性能考虑，会把多次setState合并成一次修改。所以不能依赖当前的state，计算下个state。当真正执行状态修改时，依赖的this.state并不能保证是最新的state，因为React会把多次state的修改合并成一次，这时，this.state还是等于这几次修改发生前的state。另外需要注意的是，同样不能依赖当前的props计算下个state，因为props的更新也是异步的。比如
 对于一个电商项目，在添加购物车场景下，调用this.setState({quantity: this.satet.quantity+1})，连续调用两次，在React合并多次修改为一次的情况下，相当于等价执行了如下代码：
+
 ```js
 Object.assign(
   previousState,
@@ -68,6 +69,7 @@ this.setState((preState, props) => ({
 ```
 * State 的更新是一个浅合并（Shallow Merge）的过程
 当调用setState修改组件状态时，只需要传入发生改变的状态变量，而不是组件完整的state，因为组件state的更新是一个浅合并（Shallow Merge）的过程，比如
+
 ```js
 this.state = {
   title : 'React',
