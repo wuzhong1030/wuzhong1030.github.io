@@ -26,7 +26,7 @@ npm i webpack webpack-cli vue vue-loader vue-template-compiler css-loader style-
 
 ## 3. webpack.config.js
 在项目根目录新建 webpack.config.js
-```javascript
+```js
 var path = require('path')
 module.exports = {
 	entry: {
@@ -43,7 +43,7 @@ npm i html-webpack-plugin clean-webpack-plugin - D
 ```
 
 ## 5.修改webpack.config.js
-```javascript
+```js
 const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const htmlWebpackPlugin = require('html-webpack-plugin')
@@ -99,7 +99,7 @@ module.exports = {
 
 ## 6.新建模板文件，修改package.json
 在根目录新建 index.tpl.html，然后在package.json增加一个脚本命令
-```javascript
+```js
 "build": "webpack --config webpack.config.js --mode development"
 ```
  
@@ -109,7 +109,7 @@ src
 	-app.js
 	-index.vue
 
-```javascript
+```js
 //app.js
 import Vue from 'vue'
 import App from './index.vue'
@@ -122,7 +122,7 @@ new Vue({
 }).$mount(root)
 ```
 
-```javascript
+```js
 //index.vue
 <template>
   <div class="page">

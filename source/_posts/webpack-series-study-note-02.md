@@ -11,7 +11,7 @@ webpack的强大之处就在于loader，想要深刻认识loader，就自己写�
 
 在写一个loader之前，先研究了下一个常用的loader———css-loader和style-loader是如何作用的。
 
-```javascript
+```js
 module.export = {
     rules: [
         {
@@ -29,7 +29,7 @@ module.export = {
 ### 深入理解loader
 
 因为webpack是运行再nodeJS环境中，所以一个loader其实就是一个nodeJs小模块，这个模块会导出一个函数，例如：
-```javascript
+```js
 module.exports = function (source) {
     //source是拿到源文件的内容
     //... 在这里编写处理源文件的逻辑
@@ -40,14 +40,14 @@ module.exports = function (source) {
 > 以上是最简单的loader，没有做任何处理，直接返回源文件的内容。
 
 因为是nodeJs环境，在这里还可以借用第三方库编写loader，例如：
-```javascript
+```js
 module.exports = function (source) {
     var sass = require("node-sass");
     return sass(source)
 }
 ```
 不仅如此，还可以调用webpack提供的API，例如：
-```javascript
+```js
 const loderUtil = require("loader-utils");
 module.exports = function (source) {
     const options = loaderUtils.getOptions(this);
@@ -57,7 +57,7 @@ module.exports = function (source) {
 ```
 
 > 这里的options通过在这里传入：
-```javascript
+```js
 module.export = {
     rules: [
         {
@@ -74,15 +74,15 @@ module.export = {
 ### 动手写
 
 > 需求：编写一个loader，就是转换JavaScript中的注释语法，把形如
-```javascript
+```js
 // @require './assets/style/index.css'
 ```
 转换成
-```javascript
+```js
 require('./assets/style/index.css');
 ```
 这种是通过注释的方式懒加载css。完整代码如下：
-```javascript
+```js
 module.exports = function (source) {
     return function () {
         return source.replace(/(\/\/ *@require) +(('|").+('|")).*/, 'require($2);');
@@ -91,7 +91,7 @@ module.exports = function (source) {
 ```
 附 使用方法
 在 node_modules 文件下新建一个名为comment-require-loader，然后新建一个index.js，内容如下：
-```javascript
+```js
 ...
 rules: [
     {

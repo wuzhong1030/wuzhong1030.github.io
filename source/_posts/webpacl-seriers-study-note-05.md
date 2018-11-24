@@ -19,7 +19,7 @@ tags: webpack
 
 ### 开启 CSS Tree Shaking
 借助purify css，在webpack中安装purifycss-webpack插件
-```javascript
+```js
 let Purifycss = require('purifycss-webpack')
 let glob = require('glob-all')
 ...

@@ -32,7 +32,7 @@ npm install vue vue-server-renderer express --save
 </html>
 ```
 **index.js**
-```javascript
+```js
 const Vue = require('vue')
 const server = require('express')()
 const fs = require('fs')

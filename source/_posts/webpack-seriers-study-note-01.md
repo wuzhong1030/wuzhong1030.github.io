@@ -12,7 +12,8 @@ reward: true
 这个选项指的是webpack的入口文件，可以是单一的，也可以有多入口。
 
 > 单一入口示例：
-```javascript
+
+```js
 //webpack.base.config.js
 module.exports = {
 entry: {
@@ -21,7 +22,8 @@ entry: {
 }
 ```
 > 多入口示例，适用于多页面应用（MPA）
-```javascript
+
+```js
 //webpack.base.config.js
 module.exports = {
 entry: {
@@ -34,7 +36,7 @@ entry: {
 
  **2. 输出（output）**
 在所有的资源（assets）处理完成后，需要告诉webpack将资源打包输出在哪里，这个选项就可以指定输出文件的名称以及目录位置，这里注意即便存在多个入口，也只能有一个output。
-```javascript
+```js
 //webpack.config.js
 module.exports = {
   entry: './src/index.js',
@@ -63,7 +65,8 @@ module.exports = {
 这个是webpack的核心理念，所有的资源都是模块，webpack会把项目中的每一个文件（.css，.js，.html，.scss，.jpg等）通过loader来转换成模块，然后再添加到依赖表中。
 
 > loader也是需要配置的，告诉webpack哪些文件是需要被转换的
-```javascript
+
+```js
 //此配置可以会把app.js，index.js输出到../dist目录下
 module.exports = {
   module: {
@@ -78,7 +81,7 @@ module.exports = {
 > 例如使用 模块热替换(Hot Module Replacement) 插件
 这个插件很常用，可以在修改代码后，自动刷新并且实时预览
 
-```javascript
+```js
 module.exports = {
     plugins: [
         new webpack.HotModuleReplacementPlugin()

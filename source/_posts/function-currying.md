@@ -8,7 +8,7 @@ tags: javascript, currying
 
 <!-- more -->
 
-```javascript
+```js
 var currying = function(fn) {
     var slice = Array.prototype.slice,
         __args = slice.call(arguments, 1);
@@ -22,7 +22,7 @@ var currying = function(fn) {
 ###应用场景
 
 ## 1. 延迟计算
-```javascript
+```js
 var currying = function(fn) {
     var args = [];
     return function result(...rest) {
@@ -43,7 +43,7 @@ res(); //15
 **这里利用了闭包的功能保存了函数的执行状态**
 ## 2. 动态创建函数
  写一个兼容现代浏览器和IE浏览器的添加事件方法，通常会这样写：
-```javascript
+```js
 const addEvent = function(ele, type, fn, capture) {
     if(window.addEventListener) {
         ele.addEventListener(type, (e) => fn.call(ele, e), capture)
@@ -54,7 +54,7 @@ const addEvent = function(ele, type, fn, capture) {
 ```
 这个写法不够好，因为每次都会执行一次判断，而这个添加事件应该只需要判断一次即可。
 用柯里化可以优化这段代码：
-```javascript
+```js
 const addEvent = function() {
     if(window.addEventListener) {
         return function(ele, type, fn, capture) {
@@ -71,7 +71,7 @@ const addEvent = function() {
 ## 3. 参数复用
  当多次调用一个函数的时候，并且传递的参数大都相同，这个时候就可以应用柯里化函数。
 例如：
-```javascript
+```js
 const obj = {name: 'test'};
 const foo = function(prefix, suffix) {
     console.log(prefix + this.name + suffix);
@@ -80,7 +80,7 @@ foo('-function'); // currying-test-function
 ```
 bind方法的作用是，把第一个参数设置成函数执行的上下文环境，其余参数依次传入给调用的方法，函数自身不会执行，可以看成是一个延迟执行的函数。所以bind的实现应用到了柯里化思想。
 手动实现一个bind方法：
-```javascript
+```js
 Function.prototype.bind = function(context, ...args) {
     return (...rest) => this.call(context, ...args, ...rest);
 }
