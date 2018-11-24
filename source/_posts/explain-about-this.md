@@ -50,7 +50,7 @@ obj.foo() // 2
 
 首先需要注意的是 <font color=#c7254e>foo</font> 的声明方式，以及之后被当做引用属性添加到 <font color=#c7254e>obj</font> 对象中。调用位置会使用 <font color=#c7254e>obj</font> 上下文来引用函数，因此可以说函数被调用时，<font color=#c7254e>obj</font> 对象`拥有`或`包含`这个foo。
 
-#### 隐式丢失
+##### 隐式丢失
 这个隐式丢失问题就是被隐式绑定this的函数会丢失绑定对象，会应用默认绑定模式。
 
 ```js
@@ -68,7 +68,7 @@ bar() // oops, global
 
 虽然 <font color=#c7254e>bar</font> 是 <font color=#c7254e>obj.foo</font>  的一个引用，但实际上，它引用的是 <font color=#c7254e>foo</font> 函数本身，所以 <font color=#c7254e>bar</font> 的调用对象是全局对象，因此使用了默认绑定。
 
-### 显式绑定
+#### 显式绑定
 显式绑定就是通过 <font color=#c7254e>call(...)</font>和<font color=#c7254e>apply(...)</font> 来显式的确定函数 <font color=#c7254e>this</font> 的绑定对象。
 
 ```js
@@ -83,7 +83,7 @@ foo.call(obj) // 2
 通过 <font color=#c7254e>foo.call</font> ，我们可以在调用 <font color=#c7254e>foo</font> 时强制把它的 <font color=#c7254e>this</font> 绑定到obj上。
 > 如果你传入了一个原始值（字符串类型，、布尔类型或者数字类型）来当做 <font color=#c7254e>this</font> 的绑定对象，这个原始值会被转换成它的对象形式（也就是 new String(...)， new Boolean(...)， new Number(...)）。这通常被称为`装箱`。
 
-### new绑定
+#### new绑定
 
 ```js
 function foo (a) {
