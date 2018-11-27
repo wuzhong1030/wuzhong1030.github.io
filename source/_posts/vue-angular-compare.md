@@ -6,8 +6,6 @@ tags: vuejs, angular
  
 angular1.0 和 vue2.0
 
-<!-- more -->
-
 ## angular
 angularJs 实现的双向绑定是通过脏值检查，来比对数据是否有变更，并且只有在以下场景才会进入脏值检查：
 * DOM事件，用户输入文本，点击按钮等（ng-click）

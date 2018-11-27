@@ -6,8 +6,6 @@ tags: javascript, currying
 
 函数柯里化，是把接受多个参数的函数转换成接受原函数第一个参数的函数，并且接受原函数的其余参数和返回结果的一个新函数。简单的说就是函数部分求值，分步给函数传递参数，每次传递参数后，只取第一个参数求值，并且返回一个接受其余参数的新函数。
 
-<!-- more -->
-
 ```js
 var currying = function(fn) {
     var slice = Array.prototype.slice,

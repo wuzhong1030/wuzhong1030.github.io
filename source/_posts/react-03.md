@@ -6,8 +6,6 @@ tags: react, javascript
 
 ### 深入理解 React Fiber
 
-<!-- more -->
-
 #### React Fiber 是什么
 用官方的话说，React Fiber是一次对核心算法的重新实现，这是在React v16版本上添加的。Fiber的英文含义就是“纤维”，意思就是比线程（Thread）更细的线，也就是比线程控制的更精密的处理机制。我的理解就是Fiber是一种新的调度方式，更加灵活高效。
 

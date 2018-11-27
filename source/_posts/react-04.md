@@ -6,8 +6,6 @@ tags: javascript, react
 
 ### 使用styled-components在React写CSS
 
-<!-- more -->
-
 React组件样式可以从多方面构建。styled-components库提供了一种更好的方式来书写React组件样式，
 
 #### 安装

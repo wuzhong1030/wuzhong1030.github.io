@@ -47,6 +47,7 @@ module.exports = function (source) {
 }
 ```
 不仅如此，还可以调用webpack提供的API，例如：
+
 ```js
 const loderUtil = require("loader-utils");
 module.exports = function (source) {
@@ -57,6 +58,7 @@ module.exports = function (source) {
 ```
 
 > 这里的options通过在这里传入：
+
 ```js
 module.export = {
     rules: [
@@ -74,10 +76,13 @@ module.export = {
 ### 动手写
 
 > 需求：编写一个loader，就是转换JavaScript中的注释语法，把形如
+
 ```js
 // @require './assets/style/index.css'
 ```
+
 转换成
+
 ```js
 require('./assets/style/index.css');
 ```

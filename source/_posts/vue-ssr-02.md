@@ -5,8 +5,6 @@ tags: 服务端渲染， Vue
 ---
 简单的vue-ssr demo，vue + express
 
-<!-- more -->
-
 ### 1.安装
 新建一个空文件夹，通过npm（yarn）安装 vue-server-renderer 和 express，命令如下：
 ```bash

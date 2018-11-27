@@ -6,8 +6,6 @@ tags: vue, webpack
 
 结合webpack，从零搭建一个极简的vue项目
 
-<!-- more -->
-
 环境：
 * webpack: 4.16.0
 * webpack-cli: 3.0.8

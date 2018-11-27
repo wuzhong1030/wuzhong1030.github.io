@@ -6,8 +6,6 @@ tags: javascript
 
 ES5, ES6, ES7的Object静态方法
 
-<!-- more -->
-
 * Object.keys(obj)
 > 返回一个所有元素为字符串的数组，其元素来自于从给定的object上面**可直接枚举**的属性。这些属性的顺序与手动遍历该对象属性时的一致。
 ```js

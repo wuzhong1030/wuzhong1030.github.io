@@ -6,8 +6,6 @@ tags: javascript, react
 
 ### 初识 React
 
-<!-- more -->
-
 #### 什么是React
 React是Facebook开源的js库，用于灵活的构建用户界面，可以看出MVC中的V层
 

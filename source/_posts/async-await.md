@@ -5,8 +5,6 @@ tags: async, asait, promise
 ---
 async 函数是 generator 函数的语法糖，是ES7的新特性，表示一个异步函数。async 函数内部的修饰符 await 表示把一个异步函数转成一个同步函数。
 
-<!-- more -->
-
 相比较于generator函数，async函数有以下几个改良：
 
  1. 更好的语义化。async表示一个异步函数，函数内部的await，表示等待一个异步返回的结果；

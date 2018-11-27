@@ -4,9 +4,7 @@ date: 2018-11-15 21:39:26
 tags: es, javascript
 ---
 
-模块系统中，commonJS模块对比ES6模块
-
-<!-- more -->
+### 模块系统中，commonJS模块对比ES6模块
 
 早前的JavaScript，并没有模块化的概念，社区涌现一批模块化的方案，其中就包括commonJs和ES6。
 在没有模块化之前，都是通过script标签引入js，这是最原始的加载方式，所以它们通常都是暴露在全局环境下的，是同一个作用域window。这样做的缺点有：

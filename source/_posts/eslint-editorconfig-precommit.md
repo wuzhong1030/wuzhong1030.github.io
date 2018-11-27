@@ -6,11 +6,10 @@ tags: eslint
 
 使用ESlint，规范代码书写。
 
-<!-- more -->
-
 ## ESlint
 
 ### 1.好处
+
 * 给项目代码制定一个代码规范，统一风格
 * 防止低级错误，比如代码格式带来的问题
 * 团队协作更加友好，更容易读懂别人的代码
@@ -112,9 +111,11 @@ trim_trailing_whitespace = true #去掉一行中最后一个空格
 > 如果项目中使用git管理代码，可以使用precommit，这样在commit之前会先检验一次代码，确保提交的代码正确性后，才会推到远程仓库。
 
 ### 如何使用
+
 1. 先 git init
 2. npm install husky -D
 3. 修改 package.json
+
 ```json
 scripts: {
 	"lint-fix": "eslint --fix --ext .js,.vue src",

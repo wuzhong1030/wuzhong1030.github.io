@@ -6,8 +6,6 @@ tags: vue, javascript
 
 ### vue的编译过程
 
-<!-- more -->
-
 #### 编译
 vue的模板编译（compile）是在$mount中进行的，过程可以分为三个阶段，parse， optimize， generate， 最终会得到render function。
 1. parse

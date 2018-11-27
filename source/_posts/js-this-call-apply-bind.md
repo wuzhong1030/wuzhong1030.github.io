@@ -6,8 +6,6 @@ tags: javascript
 
 在JavaScript中经常用到的this, call, apply, bind
 
-<!-- more -->
-
 ### 先来看下this
 
 在 javascript 中，方法是怎么执行的

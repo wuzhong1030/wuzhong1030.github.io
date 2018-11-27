@@ -6,8 +6,6 @@ tags:
 
 webpack 开发搭建环境
 
-<!-- more -->
-
 ## 方法
 
  1. webpack watch mode

@@ -6,8 +6,6 @@ tags: vue
 
 new Vue发生了什么
 
-<!-- more -->
-
 从github上拉取vue的源码，打开 <font color="#dd0000">src/core/instance/index.js </font> 可以看到Vue是一个Function，而在javascript里面，new关键字是实例化一个对象，所以这里的Vue实际上是一个类，这里用ES5的语法模拟了一个Vue类。之所以不用ES6的class关键字来定义，是因为用ES5更容易书写代码，可以方便的倒入其他模块，这样代码更清晰。
 ```javascript
 import { initMixin } from './init'

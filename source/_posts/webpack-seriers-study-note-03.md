@@ -6,8 +6,6 @@ tags: webpack, javascript
 
 webpack4 新特性
 
-<!-- more -->
-
 ## 新特性
 ### 0配置
 > entry，output增加了默认配置，即不设置的情况下，默认 entry 的入口文件在 ./src/index.js，output 默认输出 ./dist 目录下
