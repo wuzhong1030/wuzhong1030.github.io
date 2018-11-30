@@ -73,7 +73,7 @@ social:
 # ===========================================
 
 # LeanCloud
-leancloud: false
+leancloud:
   app_id:
   app_key:
 
