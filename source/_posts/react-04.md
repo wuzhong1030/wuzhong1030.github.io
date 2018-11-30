@@ -21,8 +21,7 @@ yarn add styled-components
 
 1. 没有使用styled-components
 ```js
-
-```class Sidebar extends React.Component {
+class Sidebar extends React.Component {
      render() {
        return (
          <div classNames="sidebar">
@@ -35,6 +34,7 @@ yarn add styled-components
  ```
 
  2. 使用styled-components
+ 
  ```js
  class SidebarContainer extends React.Component {
   render() {
