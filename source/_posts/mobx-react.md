@@ -1,5 +1,5 @@
 ---
-title: Mobx--基于响应式的状态管理
+title: MobX--基于响应式的状态管理
 date: 2018-12-28 11:21:06
 tags: React, MobX
 ---
