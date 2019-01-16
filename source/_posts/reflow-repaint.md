@@ -10,7 +10,7 @@ tags: css, html
 
 ## 浏览器的渲染
 
-* DOM Tree: 浏览器将 CSS 解析成 CSSOM 的树形结构
+* CSS Tree: 浏览器将 CSS 解析成 CSSOM 的树形结构
 * DOM Tree：浏览器将 HTML 解析成树形的数据结构
 * Render Tree：将 DOM 与 CSSOM 合并成一个渲染树
 
