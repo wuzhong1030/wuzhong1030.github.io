@@ -53,7 +53,7 @@ this.size = function () {
 }
 // 打印栈
 this.print = function () {
-    console.log(console.log(items.toString()))
+    console.log(items.toString())
 }
 ```
 
