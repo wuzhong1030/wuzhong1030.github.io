@@ -33,7 +33,9 @@ export default {
 }
 ```
 不仅仅是 `Child.vue` ，只要是 `Parent.vue` 的子组件，无论隔多少代，都可以通过这个的方式注入。 这种多级组件透传的方式可以保证单向数据流的清晰性，例如像用户信息这样的全局信息，就可以借助这两个 API 来完成，而没有引入第三方库 `vuex`。
+
 ### 替代 Vuex
+
 `vuex` 是把数据集中管理，然后哪里需要就在哪里获取，按照这个思路，我们可以在根组件 `App.vue` 中注入全局信息，并且在页面的任何地方使用。
 ```js
 // App.vue
@@ -76,7 +78,101 @@ export default {
 </script>
 ```
 
-## `$dispatch` 、 `$broadcast`
+## `$attrs` 、`$listeners`
+> 这两个 API 是 Vue 2.4.0 新增的。`$attrs` ，继承所有的父组件属性；`$listeners` ，它是一个对象，里面包含了作用在这个组件上的所有监听器。
+
+主要用途就是用在父组件传递数据给子组件或者孙组件。
+
+```js
+<!-- Parent.vue -->
+<template>
+  <div id="app">
+    <child1 :p-child1="child1"
+            :p-child2="child2"
+            :p-child3="child3"
+            v-on:test1="onTest1"
+            v-on:test2="onTest2">
+    </child1>
+  </div>
+</template>
+<script>
+import Child1 from "./Child1.vue";
+export default {
+  data() {
+    return {
+        child1: 'child1',
+        child2: 'child2',
+        child3: 'child3'
+    };
+  },
+  components: { Child1 },
+  methods: {
+    onTest1() {
+      console.log("test1 running...");
+    },
+    onTest2() {
+      console.log("test2 running");
+    }
+  }
+};
+</script>
+```
+
+```js
+<!-- Child1.vue -->
+<template>
+    <div class="child-1">
+        <p>in child1:</p>
+        <p>props: {{pChild1}}</p>
+        <p>$attrs: {{$attrs}}</p>
+        <hr>
+        <!-- Child2 组件中能直接触发 test 的原因在于 Child1 组件调用 Child2 组件时 使用 v-on 绑定了 $listeners 属性 -->
+        <!-- 通过 v-bind 绑定 $attrs 属性，Child2 组件可以直接获取到 Parent 组件中传递下来的 props（除 了Child1 组件中 props 声明的） -->
+        <child2 v-bind="$attrs" v-on="$listeners"></child2>
+    </div>
+</template>
+<script>
+import Child2 from './Child2.vue';
+export default {
+    props: ['pChild1'],
+    data() {
+        return {};
+    },
+    inheritAttrs: false,
+    components: { Child2 },
+    mounted() {
+        this.$emit('test1');
+    }
+};
+</script>
+
+```
+
+```js
+<!-- Child2.vue -->
+<template>
+    <div class="child-2">
+        <p>in child2:</p>
+        <p>props: {{pChild2}}</p>
+        <p>$attrs: {{$attrs}}</p>
+        <hr>
+    </div>
+</template>
+<script>
+export default {
+    props: ['pChild2'],
+    data() {
+        return {};
+    },
+    inheritAttrs: false,
+    mounted() {
+        this.$emit('test2');
+    }
+};
+</script>
+```
+
+## `dispatch` 、 `broadcast`
 这两个 API 是 Vue 1.0 版本的，`$dispatch` 用于向上级派发事件，`$broadcast` 用于向下级广播事件的，它们在 2.0 版本中已经被废弃了。
 
 > 因为基于组件树结构的事件流方式有时让人难以理解，并且在组件结构扩展的过程中会变得越来越脆弱。
