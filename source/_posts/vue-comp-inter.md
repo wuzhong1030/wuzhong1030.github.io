@@ -271,6 +271,7 @@ export default {
 ## 其他方法
 在 vue 中组件的通信还有其他的手法，例如：
 1. `props` 、`$emit` 
+
 ```js
 <!-- Parent.vue -->
 <template>
